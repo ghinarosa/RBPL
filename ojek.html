@@ -1,0 +1,26 @@
+<html>
+    <head>
+    <title> Tarif Ojek</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script>
+    
+    function hitung()
+    {
+        document.forms["myform"]["hasil"].value = 2000 * document.forms["myform"]["km"].value;
+    }
+    </script>
+
+    </head>
+    <body>
+       <div class="jumbotron">
+        <h2> TARIF OJEK </h2>
+           <form id="myform">
+            <h3> 1 km = Rp. 2000 </h3>
+            <h3> Jarak <input type="text" id="km"> km </h3>
+            <h3> Jumlah bayar Rp <input type="text" id="hasil"></h3>
+            <button type="button" class="btn btn-primary" onclick="hitung();"> Hitung </button>
+
+           </form>
+           </div>
+    </body>
+</html>
